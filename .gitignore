@@ -1,0 +1,23 @@
+# Build
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Visual Studio
+.vscode/
+*.vs
+
+# Config files
+appsettings*.json
+
+# Dotnet-generated
+*.db
+
+# Others
+*.log
+*.DS_Store
+
+

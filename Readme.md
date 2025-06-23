@@ -2,9 +2,9 @@
 # 📌 README - Desafio Técnico Backend (C# .NET Core)
 
 ### Visão Geral
-Este projeto foi desenvolvido como resposta a um desafio técnico que tem como objetivo avaliar habilidades no desenvolvimento de APIs backend utilizando C# e .NET Core.
+Este projeto foi desenvolvido para um desafio técnico que tem como objetivo avaliar habilidades no desenvolvimento de APIs backend utilizando C# e .NET Core.
 
-Embora o desafio tenha focado no cadastro, consulta, exclusão, listagem e pesquisa da entidade Cliente, a solução entregue vai além e contempla também as entidades Contato e Endereço, com todas as operações CRUD e pesquisa implementadas, oferecendo uma API mais completa e integrada.
+O desafio tem como foco, o cadastro, consulta, exclusão, listagem e pesquisa de clientes, ou seja, CRUD completo.
 
 ## 🚀 Tecnologias Utilizadas
 

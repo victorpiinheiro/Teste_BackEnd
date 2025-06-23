@@ -11,7 +11,7 @@ obj/
 *.vs
 
 # Config files
-appsettings*.json
+
 
 # Dotnet-generated
 *.db

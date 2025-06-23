@@ -116,5 +116,46 @@ DELETE| api/Endereco/{id}| Excluir endereço
 
  - Também foram capturados prints dos testes para visualização rápida da API em funcionamento.
 
- ## 📸 Exemplo Visuais - (Insomnia) 
- ![GET clientes](prints/get-cli.png)
+ ## 📸 Exemplos Visuais (Insomnia)
+
+### 🧍 Cliente
+
+#### 🔹 GET /api/Clientes
+
+![GET clientes](docs/prints/get-cl.png)
+
+#### 🔹 POST /api/Clientes
+
+![POST cliente](docs/prints/post-cl.png)
+
+#### 🔸 Erro - ID inexistente
+
+![Erro cliente](docs/prints/erro-cl.png)
+
+---
+
+### ☎️ Contato
+
+#### 🔹 GET /api/Contatos
+
+![GET contato](docs/prints/get-cont.png)
+
+#### 🔹 POST /api/Contatos
+
+![POST contato](docs/prints/post-cont.png)
+
+---
+
+### 🏠 Endereço
+
+#### 🔹 POST /api/Endereco (ViaCEP)
+
+![POST endereço](docs/prints/post-end.png)
+
+#### 🔹 PUT /api/Endereco/{id}
+
+![PUT endereço](docs/prints/put-end.png)
+
+---
+
+> ⚠️ Para visualizar todas as requisições testadas, consulte a pasta `/docs/prints` ou a pasta `docs/Insomnia_Collection_ClienteApi.json`

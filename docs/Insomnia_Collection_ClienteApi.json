@@ -1,0 +1,555 @@
+type: collection.insomnia.rest/5.0
+name: Clientes API
+meta:
+  id: wrk_4fcee48040814bbb884cb8f2e68d35ef
+  created: 1750302021276
+  modified: 1750302021276
+  description: ""
+collection:
+  - name: Clientes
+    meta:
+      id: fld_95470572de9f44f4838a71dac2c9b17b
+      created: 1750302049327
+      modified: 1750302049327
+      sortKey: -1750302049327
+      description: ""
+    children:
+      - url: http://localhost:5274/api/Clientes
+        name: REGISTER CLIENTE
+        meta:
+          id: req_ebfcb3ffb12b450fb57031a5a706416c
+          created: 1750302052866
+          modified: 1750642826569
+          isPrivate: false
+          description: ""
+          sortKey: -1750302053166
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"Nome": "Victor Pinheiro"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Clientes
+        name: GET CLIENTES
+        meta:
+          id: req_b7580aa51e284ace8779c845a92c9014
+          created: 1750303589150
+          modified: 1750618448070
+          isPrivate: false
+          description: ""
+          sortKey: -1750302053066
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Clientes/8
+        name: GET CLIENTE BY ID
+        meta:
+          id: req_f91a4d5da8ac424dbf48ba5dda5bb421
+          created: 1750345000833
+          modified: 1750645266976
+          isPrivate: false
+          description: ""
+          sortKey: -1750302053016
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: false
+      - url: http://localhost:5274/api/Clientes/pesquisar?termo=heit
+        name: "PESQUISAR CLIENTES "
+        meta:
+          id: req_54fc6475f48541edad9e2b56a3aa9461
+          created: 1750349340797
+          modified: 1750643091464
+          isPrivate: false
+          description: ""
+          sortKey: -1750302052966
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Clientes/5
+        name: DELETE CLIENTE
+        meta:
+          id: req_02dc3eea90c54503947c865cb96fb953
+          created: 1750352193800
+          modified: 1750643144233
+          isPrivate: false
+          description: ""
+          sortKey: -1748163023436.5
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: false
+      - url: http://localhost:5274/api/Clientes/4
+        name: UPDATE CLIENTE
+        meta:
+          id: req_f37be087c13940f8bbf89fb9ea30c6bf
+          created: 1750619962202
+          modified: 1750643282883
+          isPrivate: false
+          description: ""
+          sortKey: -1748163023336.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"Nome": "Heitor EDITADO"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Clientes/Details
+        name: GET CLIENTE DETAILS
+        meta:
+          id: req_8d2f39c8d69e4939a873196d63bcb2e7
+          created: 1750621170046
+          modified: 1750621173724
+          isPrivate: false
+          description: ""
+          sortKey: -1750302053041
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Endereco
+    meta:
+      id: fld_ad8fa9c9a5fc42b3b4fff17339225523
+      created: 1750512741665
+      modified: 1750512741665
+      sortKey: -1750512741665
+      description: ""
+    children:
+      - url: http://localhost:5274/api/Endereco
+        name: REGISTER ENDERECO
+        meta:
+          id: req_476b2a14a7d2458c965a86b85509b587
+          created: 1750512744948
+          modified: 1750642954056
+          isPrivate: false
+          description: ""
+          sortKey: -1750518340038
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "cep": "08775150",
+              "numero": "1100",
+              "complemento": "casa verde",
+              "clienteId": 4
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Endereco
+        name: GET ENDEREÇOS
+        meta:
+          id: req_8111b62252e446768f771d5960eacc80
+          created: 1750518339938
+          modified: 1750622812371
+          isPrivate: false
+          description: ""
+          sortKey: -1750518339938
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Endereco/4
+        name: GET ENDEREÇOS BY ID
+        meta:
+          id: req_b7a8d7b429364858a1601d36011133ec
+          created: 1750622772459
+          modified: 1750643590704
+          isPrivate: false
+          description: ""
+          sortKey: -1750410196552
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Endereco/pesquisar?termo=ed
+        name: PESQUISA ENDEREÇOS
+        meta:
+          id: req_ac472bf417514a3589b7c6565c4325c4
+          created: 1750622800514
+          modified: 1750643663434
+          isPrivate: false
+          description: ""
+          sortKey: -1750356124859
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Endereco/4
+        name: UPDATE PARCIAL
+        meta:
+          id: req_ae74977dca2044dcb960badff7911f16
+          created: 1750623865036
+          modified: 1750643723598
+          isPrivate: false
+          description: ""
+          sortKey: -1750356124759
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "numero": "200",
+              "complemento": "casa de esquina"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Endereco/4
+        name: UPDATE TOTAL
+        meta:
+          id: req_fedf0a7cc9654f9098d3b849e5f6cde8
+          created: 1750624009747
+          modified: 1750643767498
+          isPrivate: false
+          description: ""
+          sortKey: -1750329088962.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "cep": "08775-000",
+              "numero": "3139",
+              "complemento": "EM FRENTE AO POSTO DE GASOLINA"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Endereco/4
+        name: DELETE ENDERECO
+        meta:
+          id: req_9919b078f27f49a1ac94e0d2a725f4c9
+          created: 1750624175496
+          modified: 1750643363903
+          isPrivate: false
+          description: ""
+          sortKey: -1750315571064.25
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Contatos
+    meta:
+      id: fld_e8a6ba55d9934b04977117df211f44bf
+      created: 1750626656616
+      modified: 1750626656616
+      sortKey: -1750626656616
+      description: ""
+    children:
+      - url: http://localhost:5274/api/Contatos
+        name: CREATE CONTATO
+        meta:
+          id: req_3c15c9b24157435e87e571f2b0c7fdc6
+          created: 1750626664989
+          modified: 1750643941565
+          isPrivate: false
+          description: ""
+          sortKey: -1750626664989
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "tipo": "telefone",
+              "texto": "(11)4790-3892",
+              "clienteId": 4
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Contatos
+        name: GET CONTATOS
+        meta:
+          id: req_f1b702dd51604d15b48afc9db0ccf10c
+          created: 1750627704483
+          modified: 1750627711814
+          isPrivate: false
+          description: ""
+          sortKey: -1750572502513.5
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Contatos/1
+        name: GET CONTATOS BY ID
+        meta:
+          id: req_f771daea3935471884269b589022f3b7
+          created: 1750627895807
+          modified: 1750644126449
+          isPrivate: false
+          description: ""
+          sortKey: -1750545421275.75
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Contatos/pesquisar?termo=vic
+        name: PESQUISAR CONTATOS
+        meta:
+          id: req_6bc0303d5cde401f933647c02f931235
+          created: 1750628063725
+          modified: 1750644171260
+          isPrivate: false
+          description: ""
+          sortKey: -1750531880656.875
+        method: GET
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Contatos/2
+        name: DELETE CONTATO
+        meta:
+          id: req_8bdc41de9ecb44eb9335982fa89f52b4
+          created: 1750628122248
+          modified: 1750644205683
+          isPrivate: false
+          description: ""
+          sortKey: -1750538650966.3125
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:5274/api/Contatos/2
+        name: UPDATE CONTATO
+        meta:
+          id: req_e9456e5649f245a9bf1a63b8fd09f40a
+          created: 1750628646267
+          modified: 1750644027295
+          isPrivate: false
+          description: ""
+          sortKey: -1750599583751.25
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "tipo": "email",
+              "texto": "victor@pinheiro.com.br"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.2.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_5f230f57b7c377f72bbb2ce15855ff1144821029
+    created: 1750302021290
+    modified: 1750302021290
+environments:
+  name: Base Environment
+  meta:
+    id: env_5f230f57b7c377f72bbb2ce15855ff1144821029
+    created: 1750302021287
+    modified: 1750302021287
+    isPrivate: false

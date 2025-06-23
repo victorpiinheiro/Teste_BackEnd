@@ -116,5 +116,5 @@ DELETE| api/Endereco/{id}| Excluir endereço
 
  - Também foram capturados prints dos testes para visualização rápida da API em funcionamento.
 
- ## 📸 Exemplo de Rota - GET /clientes
+ ## 📸 Exemplo Visuais - (Insomnia) 
  ![GET clientes](prints/get-cli.png)

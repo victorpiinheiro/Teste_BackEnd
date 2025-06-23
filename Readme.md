@@ -108,6 +108,72 @@ PUT| api/Endereco/{id}| Editar endereço completo por Cep(ViaCEP)
 PATCH| api/Endereco/{id}| Editar numero e complemento
 DELETE| api/Endereco/{id}| Excluir endereço
 
+
+## Como Rodar a API Localmente
+
+ Siga este passo a passo completo para executar a aplicação em seu ambiente de desenvolvimento:
+
+### Pré-requisitos
+MySQL Workbench instalado 
+
+.NET 8.0 SDK 
+
+Git 
+
+Insomnia (opcional para testes) 
+
+### Configuração Inicial
+#### 1 - Clone o repositório:
+
+```bash
+  git clone https://github.com/victorpiinheiro/Teste_BackEnd
+  cd Teste_BackEnd
+```
+
+#### 2 - Exclua a pasta de migrations do projeto (O EF irá fazer o trabalho de recria-las)
+
+#### 3 - Configure o appsettings.json (arquivo na raiz do projeto)
+
+```bash
+ {
+  "ConnectionStrings": {
+    "DefaultConnection": "server=localhost; user=root; password=sua-senha; database=ClientesApi;"
+  }
+}
+```
+
+#### 4 - Crie e aplique as migrations:
+
+```bash
+ dotnet ef migrations add Initial
+ dotnet ef database update
+```
+
+#### 5 - Execute a aplicação:
+```bash
+ dotnet run
+```
+Para abrir o Swagger após executar `dotnet run`, veja a URL exibida no terminal, por exemplo:
+
+http://localhost:5274
+
+Basta acessar essa URL no navegador e adicionar `/swagger` no final:
+
+http://localhost:5274/swagger
+
+Assim, você terá acesso à documentação interativa e poderá testar todos os endpoints da API.
+
+### ✅ O que acontece:
+
+O EF Core vai automaticamente:
+
+ - Criar o banco de dados ClientesApi (se não existir)
+
+ - Criar todas as tabelas (Clientes, Contatos, Enderecos)
+
+ - Configurar os relacionamentos
+
+
 ### 🧪 Testes
 
  - Os testes foram realizados com o Insomnia, cobrindo todos os endpoints da aplicação.

@@ -33,7 +33,7 @@ namespace ClienteApi.Controllers
 
             if (isCliente == null)
             {
-                BadRequest(new
+              return BadRequest(new
                 {
                     message = "ClienteID inválido"
                 });
